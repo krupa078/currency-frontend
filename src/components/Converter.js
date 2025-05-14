@@ -9,7 +9,7 @@ const Converter = () => {
 
   const convertCurrency = async () => {
     try {
-      const response = await fetch("http://localhost:10000/convert", {
+      const response = await fetch("https://currency-backend-6p65.onrender.com/convert", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ inr })
